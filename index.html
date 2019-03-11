@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <link rel="stylesheet" href="css/main.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.semanticui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="ui segment n-loader no-display">
+            <div class="ui active inverted dimmer">
+                <div class="ui text loader">Loading</div>
+            </div>
+            <p></p>
+        </div>
+        <div class="outer-div">
+        <div class="mb-1">
+            <select id="country-select" class="ui dropdown ">
+                <option value="BENGALURU">Bengaluru</option>
+                <option value="DELHI">Delhi</option>
+                <option value="MUMBAI">Mumbai</option>
+                <option value="PUNE">Pune</option>
+                <option value="CHENNAI">Chennai</option>
+            </select>
+        </div>
+        <div class="table-div">
+            <table id="example" class="ui celled table" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ifsc</th>
+                    <th>Bank Name</th>
+                    <th>Branch</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>ifsc</th>
+                    <th>Bank Name</th>
+                    <th>Branch</th>
+                    <th>Address</th>
+                </tr>
+             </tfoot>
+        </table>
+        </div>
+        </div>
+    </body>
+
+</html>
